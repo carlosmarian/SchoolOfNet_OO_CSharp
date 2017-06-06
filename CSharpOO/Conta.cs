@@ -5,7 +5,6 @@ namespace CSharpOO
     public class Conta
     {
         int agencia;
-
         int numeroConta;
         decimal saldo;
 
@@ -18,12 +17,9 @@ namespace CSharpOO
                     agencia = value;
             }
         }
-
         public int NumeroConta { get => numeroConta; set => numeroConta = value; }
         public decimal Saldo { get => saldo; set => saldo = value; }
-
-
-
+        
         /**
          * decrementa o saldo.
          * */

@@ -7,6 +7,7 @@ namespace CSharpOO
 
         public ContaCorrente()
         {
+            this.taxaMovimento = 0;
         }
     }
 }
