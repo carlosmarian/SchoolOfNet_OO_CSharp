@@ -9,8 +9,12 @@ namespace CSharpOO
             ContaCorrente cc = new ContaCorrente();
 
             Console.WriteLine(cc.Agencia);
-            cc.Agencia = -1;
+            cc.Agencia = 111;
             Console.WriteLine(cc.Agencia);
+
+            ContaPoupanca cp = new ContaPoupanca();
+            cp.Agencia = 321;
+            Console.WriteLine(cp.Agencia);
 
             Console.ReadLine();
         }

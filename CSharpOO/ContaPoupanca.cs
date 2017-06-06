@@ -1,23 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace CSharpOO
 {
-    public class ContaPoupanca
+    public class ContaPoupanca : Conta
     {
-        int agencia;
-        int conta;
-        decimal saldo;
-
-        void Sacar(decimal valor)
+        public ContaPoupanca()
         {
-            saldo -= valor;
-        }
-
-        void Depositar(decimal valor)
-        {
-            saldo += valor;
         }
     }
 }

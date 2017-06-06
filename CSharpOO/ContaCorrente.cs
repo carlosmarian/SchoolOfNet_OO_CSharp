@@ -1,41 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿
 namespace CSharpOO
 {
-    public class ContaCorrente
+    public class ContaCorrente : Conta
     {
-        int agencia;
-        public int Agencia {
-            get { return agencia;  }
-            set { if (value > 0)
-                    agencia = value;
-            }
-        }
-
-        int numeroConta;
-        decimal saldo;
         decimal taxaMovimento;
 
         public ContaCorrente()
         {
-            agencia = 20;
-        }
-
-        /**
-         * decrementa o saldo.
-         * */
-        void Sacar(decimal valor)
-        {
-            saldo -= valor;
-        }
-
-        /**
-         * INcrementa o saldo*/
-        void Depositar(decimal valor)
-        {
-            saldo += valor;
         }
     }
 }
