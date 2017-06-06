@@ -9,7 +9,7 @@ namespace CSharpOO
         int agencia;
         public int Agencia {
             get { return agencia;  }
-            private set { if (value > 0)
+            set { if (value > 0)
                     agencia = value;
             }
         }
@@ -17,6 +17,11 @@ namespace CSharpOO
         int numeroConta;
         decimal saldo;
         decimal taxaMovimento;
+
+        public ContaCorrente()
+        {
+            agencia = 20;
+        }
 
         /**
          * decrementa o saldo.
