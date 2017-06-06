@@ -7,7 +7,7 @@ namespace CSharpOO
         static void Main(string[] args)
         {
             ContaCorrente cc = new ContaCorrente();
-            
+            //cc.Agencia = 1;
         }
     }
 }

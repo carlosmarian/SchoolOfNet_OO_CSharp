@@ -6,9 +6,17 @@ namespace CSharpOO
 {
     public class ContaCorrente
     {
-        private int agencia;
-        private int numeroConta;
-        private decimal saldo;
+        int agencia;
+        public int Agencia {
+            get { return agencia;  }
+            private set { if (value > 0)
+                    agencia = value;
+            }
+        }
+
+        int numeroConta;
+        decimal saldo;
+        decimal taxaMovimento;
 
         /**
          * decrementa o saldo.

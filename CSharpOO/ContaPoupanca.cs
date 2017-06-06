@@ -6,9 +6,9 @@ namespace CSharpOO
 {
     public class ContaPoupanca
     {
-        private int agencia;
-        private int conta;
-        private decimal saldo;
+        int agencia;
+        int conta;
+        decimal saldo;
 
         void Sacar(decimal valor)
         {
