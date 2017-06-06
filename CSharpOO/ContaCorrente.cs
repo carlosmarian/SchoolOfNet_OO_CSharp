@@ -5,9 +5,11 @@ namespace CSharpOO
     {
         decimal taxaMovimento;
 
-        public ContaCorrente()
+        public decimal TaxaMovimento { get => taxaMovimento; set => taxaMovimento = value; }
+
+        public ContaCorrente() : base(999)
         {
-            this.taxaMovimento = 0;
+            this.TaxaMovimento = 0.1m;
         }
     }
 }

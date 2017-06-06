@@ -4,7 +4,7 @@ namespace CSharpOO
 {
     public class ContaPoupanca : Conta
     {
-        public ContaPoupanca()
+        public ContaPoupanca() : base(500)
         {
         }
     }

@@ -7,6 +7,7 @@ namespace CSharpOO
         int agencia;
         int numeroConta;
         decimal saldo;
+        decimal limite;
 
         public int Agencia
         {
@@ -19,7 +20,18 @@ namespace CSharpOO
         }
         public int NumeroConta { get => numeroConta; set => numeroConta = value; }
         public decimal Saldo { get => saldo; set => saldo = value; }
-        
+        public decimal Limite { get => limite; set => limite = value; }
+
+        public Conta()
+        {
+            this.limite = 1000;
+        }
+
+        public Conta(decimal limite)
+        {
+            this.limite = limite;
+        }
+
         /**
          * decrementa o saldo.
          * */
