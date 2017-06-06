@@ -6,7 +6,8 @@ namespace CSharpOO
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ContaCorrente cc = new ContaCorrente();
+            
         }
     }
 }

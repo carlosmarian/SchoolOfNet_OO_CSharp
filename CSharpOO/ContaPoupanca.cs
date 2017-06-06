@@ -4,22 +4,17 @@ using System.Text;
 
 namespace CSharpOO
 {
-    public class ContaCorrente
+    public class ContaPoupanca
     {
         private int agencia;
-        private int numeroConta;
+        private int conta;
         private decimal saldo;
 
-        /**
-         * decrementa o saldo.
-         * */
         void Sacar(decimal valor)
         {
             saldo -= valor;
         }
 
-        /**
-         * INcrementa o saldo*/
         void Depositar(decimal valor)
         {
             saldo += valor;
