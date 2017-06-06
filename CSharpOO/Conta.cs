@@ -35,14 +35,14 @@ namespace CSharpOO
         /**
          * decrementa o saldo.
          * */
-        void Sacar(decimal valor)
+        public virtual void Sacar(decimal valor)
         {
             Saldo -= valor;
         }
 
         /**
          * INcrementa o saldo*/
-        void Depositar(decimal valor)
+        public  void Depositar(decimal valor)
         {
             Saldo += valor;
         }

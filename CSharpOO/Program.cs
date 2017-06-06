@@ -7,16 +7,14 @@ namespace CSharpOO
         static void Main(string[] args)
         {
             ContaCorrente cc = new ContaCorrente();
-
-            Console.WriteLine(cc.Agencia);
-            cc.Agencia = 111;
-            Console.WriteLine(cc.Agencia);
-            Console.WriteLine(cc.Limite);
+            cc.Saldo = 1000;
+            cc.Sacar(200);
+            Console.WriteLine(cc.Saldo);
 
             ContaPoupanca cp = new ContaPoupanca();
-            cp.Agencia = 321;
-            Console.WriteLine(cp.Limite);
-            Console.WriteLine(cp.Agencia);
+            cp.Saldo = 1000;
+            cp.Sacar(200);
+            Console.WriteLine(cp.Saldo);
 
             Console.ReadLine();
         }
