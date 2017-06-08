@@ -14,5 +14,15 @@ namespace CSharpOO
         {
             this.SaldoGeral += conta.Saldo;
         }
+
+        public void SomarValor(decimal valor1)
+        {
+            this.SaldoGeral += valor1;
+        }
+
+        public void SomarValor(decimal valor1, decimal valor2)
+        {
+            this.SaldoGeral += (valor1 + valor2);
+        }
     }
 }

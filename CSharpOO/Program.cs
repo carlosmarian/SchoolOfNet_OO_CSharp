@@ -21,7 +21,15 @@ namespace CSharpOO
             rel.Somar(cp);
 
             Console.WriteLine(rel.SaldoGeral);
-    
+
+            rel.SomarValor(1);
+
+            Console.WriteLine(rel.SaldoGeral);
+
+            rel.SomarValor(10, 20);
+
+            Console.WriteLine(rel.SaldoGeral);
+
 
             Console.ReadLine();
         }
