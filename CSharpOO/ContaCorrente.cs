@@ -1,5 +1,4 @@
-﻿
-namespace CSharpOO
+﻿namespace CSharpOO
 {
     public class ContaCorrente : Conta
     {

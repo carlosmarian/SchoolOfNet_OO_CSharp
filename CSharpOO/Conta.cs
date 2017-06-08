@@ -2,7 +2,7 @@
 
 namespace CSharpOO
 {
-    public class Conta
+    public abstract class Conta
     {
         int agencia;
         int numeroConta;

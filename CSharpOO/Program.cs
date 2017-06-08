@@ -17,20 +17,19 @@ namespace CSharpOO
             Console.WriteLine(cp.Saldo);
 
             Relatorio rel = new Relatorio();
+
             rel.Somar(cc);
             rel.Somar(cp);
-
             Console.WriteLine(rel.SaldoGeral);
 
             rel.SomarValor(1);
-
             Console.WriteLine(rel.SaldoGeral);
 
             rel.SomarValor(10, 20);
-
             Console.WriteLine(rel.SaldoGeral);
 
 
+            //Aguarda
             Console.ReadLine();
         }
     }

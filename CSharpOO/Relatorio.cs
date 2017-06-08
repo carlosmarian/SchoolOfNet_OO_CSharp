@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CSharpOO
+﻿namespace CSharpOO
 {
     public class Relatorio
     {
