@@ -19,7 +19,7 @@ namespace CSharpOO
             }
         }
         public int NumeroConta { get => numeroConta; set => numeroConta = value; }
-        public decimal Saldo { get => saldo; private set => saldo = value; }
+        public decimal Saldo { get => saldo; protected set => saldo = value; }
         public decimal Limite { get => limite; set => limite = value; }
 
         public Conta()
@@ -42,10 +42,7 @@ namespace CSharpOO
 
         /**
          * INcrementa o saldo*/
-        public  void Depositar(decimal valor)
-        {
-            Saldo += valor;
-        }
+        public abstract void Depositar(decimal valor);
 
     }
 }

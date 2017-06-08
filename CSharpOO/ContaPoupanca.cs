@@ -7,5 +7,10 @@ namespace CSharpOO
         public ContaPoupanca() : base(900) 
         {
         }
+
+        public override void Depositar(decimal valor)
+        {
+            base.Saldo += valor;
+        }
     }
 }

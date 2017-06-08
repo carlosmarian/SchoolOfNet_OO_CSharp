@@ -1,4 +1,6 @@
-﻿namespace CSharpOO
+﻿using System;
+
+namespace CSharpOO
 {
     public class ContaCorrente : Conta
     {
@@ -14,6 +16,11 @@
         public override void Sacar(decimal valor)
         {
             base.Sacar(valor + (this.taxaMovimento * valor));
+        }
+
+        public override void Depositar(decimal valor)
+        {
+            base.Saldo += valor;
         }
     }
 }
