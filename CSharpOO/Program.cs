@@ -28,6 +28,8 @@ namespace CSharpOO
             rel.SomarValor(10, 20);
             Console.WriteLine(rel.SaldoGeral);
 
+            rel.SomarTributo(cp);
+            Console.WriteLine(rel.TributoGeral);
 
             //Aguarda
             Console.ReadLine();
