@@ -2,15 +2,33 @@
 
 namespace CSharpOO
 {
+    class MinhaException : Exception
+    {
+
+        public Exception MensagemErro()
+        {
+            return new Exception("Erro da minha excpetion");
+        }
+
+        public Exception MensagemErro(string mensagem)
+        {
+            return new Exception(mensagem);
+        }
+    }
+
     class Program
     {
         static void Main(string[] args)
         {
-            try { 
-            int a = 10;
-            int b = 1;
+            try
+            {
+                int a = 10;
+                int b = 0;
 
-            int rs = a / b;
+                if (b == 0)
+                    throw new MinhaException().MensagemErro("B não pode ser zero.");
+
+                int rs = a / b;
 
                 Console.WriteLine(rs);
 
@@ -18,6 +36,10 @@ namespace CSharpOO
 
                 Console.WriteLine(vetor[1]);
 
+            }
+            catch (MinhaException ex)
+            {
+                Console.WriteLine(string.Format("Erro, minha Exception: {0}", ex.Message));
             }
             catch (IndexOutOfRangeException ex)
             {
