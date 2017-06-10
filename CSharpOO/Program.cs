@@ -6,13 +6,18 @@ namespace CSharpOO
     {
         static void Main(string[] args)
         {
-
+            try { 
             int a = 10;
             int b = 0;
 
             int rs = a / b;
 
-            Console.WriteLine(rs);
+                Console.WriteLine(rs);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine( ex.Message );
+            }
             //ContaCorrente cc = new ContaCorrente();
             //cc.Depositar(1000);
             //cc.Sacar(200);
