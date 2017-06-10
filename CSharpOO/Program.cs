@@ -8,7 +8,7 @@ namespace CSharpOO
         {
             try { 
             int a = 10;
-            int b = 0;
+            int b = 1;
 
             int rs = a / b;
 
@@ -16,7 +16,7 @@ namespace CSharpOO
 
                 int[] vetor = new int[] { 1, 2, 4 };
 
-                Console.WriteLine(vetor[4]);
+                Console.WriteLine(vetor[1]);
 
             }
             catch (IndexOutOfRangeException ex)
@@ -30,6 +30,10 @@ namespace CSharpOO
             catch (Exception ex)
             {
                 Console.WriteLine(string.Format("Erro, {0} ({1})", ex.Message, ex.GetType()));
+            }
+            finally
+            {
+                Console.WriteLine("Fim de execução;");
             }
             //ContaCorrente cc = new ContaCorrente();
             //cc.Depositar(1000);
