@@ -13,10 +13,23 @@ namespace CSharpOO
             int rs = a / b;
 
                 Console.WriteLine(rs);
+
+                int[] vetor = new int[] { 1, 2, 4 };
+
+                Console.WriteLine(vetor[4]);
+
+            }
+            catch (IndexOutOfRangeException ex)
+            {
+                Console.WriteLine(string.Format("Erro, indice fora do limite: {0}", ex.Message));
+            }
+            catch (DivideByZeroException ex)
+            {
+                Console.WriteLine(string.Format("erro, divisão por zero: {0}", ex.Message));
             }
             catch (Exception ex)
             {
-                Console.WriteLine( ex.Message );
+                Console.WriteLine(string.Format("Erro, {0} ({1})", ex.Message, ex.GetType()));
             }
             //ContaCorrente cc = new ContaCorrente();
             //cc.Depositar(1000);
