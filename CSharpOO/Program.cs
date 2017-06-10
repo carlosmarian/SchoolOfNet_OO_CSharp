@@ -6,30 +6,37 @@ namespace CSharpOO
     {
         static void Main(string[] args)
         {
-            ContaCorrente cc = new ContaCorrente();
-            cc.Depositar(1000);
-            cc.Sacar(200);
-            Console.WriteLine(cc.Saldo);
 
-            ContaPoupanca cp = new ContaPoupanca();
-            cp.Depositar(1000);
-            cp.Sacar(200);
-            Console.WriteLine(cp.Saldo);
+            int a = 10;
+            int b = 0;
 
-            Relatorio rel = new Relatorio();
+            int rs = a / b;
 
-            rel.Somar(cc);
-            rel.Somar(cp);
-            Console.WriteLine(rel.SaldoGeral);
+            Console.WriteLine(rs);
+            //ContaCorrente cc = new ContaCorrente();
+            //cc.Depositar(1000);
+            //cc.Sacar(200);
+            //Console.WriteLine(cc.Saldo);
 
-            rel.SomarValor(1);
-            Console.WriteLine(rel.SaldoGeral);
+            //ContaPoupanca cp = new ContaPoupanca();
+            //cp.Depositar(1000);
+            //cp.Sacar(200);
+            //Console.WriteLine(cp.Saldo);
 
-            rel.SomarValor(10, 20);
-            Console.WriteLine(rel.SaldoGeral);
+            //Relatorio rel = new Relatorio();
 
-            rel.SomarTributo(cp);
-            Console.WriteLine(rel.TributoGeral);
+            //rel.Somar(cc);
+            //rel.Somar(cp);
+            //Console.WriteLine(rel.SaldoGeral);
+
+            //rel.SomarValor(1);
+            //Console.WriteLine(rel.SaldoGeral);
+
+            //rel.SomarValor(10, 20);
+            //Console.WriteLine(rel.SaldoGeral);
+
+            //rel.SomarTributo(cp);
+            //Console.WriteLine(rel.TributoGeral);
 
             //Aguarda
             Console.ReadLine();
